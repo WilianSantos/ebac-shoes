@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+body {
+    background-color: #EEEEEE;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+p {
+    text-align: justify;
+}
+
+h2 {
+    color: #5B6BBC;
+    width: 100%;
+    border-bottom: 3px solid #5B6BBC;
+    padding-bottom: 8px;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #3868D6;
+    color: #F6F7FB;
+    padding: 10px 0;
+    margin-bottom: 40px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+header li {
+    display: inline;
+    list-style: none;
+    margin-left: 20px;
+}
+
+header li a {
+    text-decoration: none;
+    color: #F6F7FB;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Sobre a loja */
+#about {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 60px;
+}
+
+#about img {
+    width: 35%;
+}
+
+#about div {
+    margin-left: 5%;
+}
+
+#about p {
+    font-size: 1.2em;
+}
+
+/* Produtos */
+#products {
+    display: block;
+    align-items: center;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    margin-bottom: 40px;
+}
+
+.product img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.product h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product p {
+    color: #9DA1A2;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+.product button {
+    padding: 5px;
+    background-color: #3868D4;
+    color: #DDECF7;
+    width: 100%;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        padding: 0 5%;
+    }
+    
+    #about {
+        display: block;
+    }
+
+    #about img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .product {
+        grid-template-columns: repeat(2, 49.5%);
+    }
+
+    .product article {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        padding: 0 10%;
+    }
+    
+    header li {
+        display: block;
+    }
+
+    #about {
+        display: block;
+    }
+
+    #about img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .product {
+        display: block;
+    }
+
+    .product article {
+        margin-bottom: 20px;
+    }
+}
